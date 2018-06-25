@@ -1,0 +1,38 @@
+﻿CREATE SCHEMA `movieshop` ;
+
+CREATE TABLE `movieshop`.`movies` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `movieName` VARCHAR(200) NOT NULL,
+  `genreId` INT UNSIGNED NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `idid_UNIQUE` (`id` ASC))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = greek;
+
+CREATE TABLE `movieshop`.`genres` (
+  `genreId` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `genreName` VARCHAR(50) NULL,
+  PRIMARY KEY (`genreId`),
+  UNIQUE INDEX `genreId_UNIQUE` (`genreId` ASC))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = greek;
+
+use movieshop;
+insert into genres (genreName) values ('Action');
+insert into genres (genreName) values ('Adventure');
+insert into genres (genreName) values ('Animation');
+insert into genres (genreName) values ('Children');
+insert into genres (genreName) values ('Comedy');
+insert into genres (genreName) values ('Crime');
+insert into genres (genreName) values ('Documentary');
+insert into genres (genreName) values ('Drama');
+insert into genres (genreName) values ('Fantasy');
+insert into genres (genreName) values ('Film-Noir');
+insert into genres (genreName) values ('Horror');
+insert into genres (genreName) values ('Musical');
+insert into genres (genreName) values ('Mystery');
+insert into genres (genreName) values ('Romance');
+insert into genres (genreName) values ('Sci-Fi');
+insert into genres (genreName) values ('Thriller');
+insert into genres (genreName) values ('War');
+insert into genres (genreName) values ('Western');

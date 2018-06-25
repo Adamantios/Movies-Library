@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Movies Library by Adamantios Zaras</title>
+        <link href="styles/default.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="styles/dialogs.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="styles/moviesTable.css" rel="stylesheet" type="text/css" media="all" />
+        <script type="text/javascript" src="scripts/functions.js"></script>
+    </head>
+    <body onload="showItems();">
+        <div id="wrapper">
+            <div id="header-wrapper">
+                <div id="header">
+                    <div id="logo">
+                        <h1>Movies Library</h1>
+                        <p>Developed by Adamantios Zaras</p>
+                    </div>
+                    <div id="menu">
+                        <ul>
+                            <li id="mMoviesList">
+                                <a href="#" onclick="showItems();">Movies List</a>
+                            </li>
+                            <li id="mAddnewmovie">
+                                <a href="#" onclick="addItem();">Add new movie</a>
+                            </li>
+                            <li id="mEditmovie">
+                                <a href="#" onclick="editItem();">Edit movie</a>
+                            </li>
+                            <li id="mDeletemovie">
+                                <a href="#" onclick="deleteItem();">Delete movie</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="page-wrapper">
+                <div id="page">
+                    <div id="content">
+                        <div>
+                            <div id="movie-table">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="edit-form-wrapper">
+                    <div id="edit-form-content">
+                        <form>
+                            <fieldset>
+                                <input id="movieID" type="hidden" value="-1"/>
+                                <legend id="formTitle">Edit Movie</legend>
+                                <p>
+                                <label for="movieTitle">Movie Title</label>
+                                <input id="movieTitle" type="text" value="" />
+                                </p>
+                                <p>
+                                <label for="genre">Genre</label>
+                                <select id="genre">
+                                </select>
+                                </p>
+                                    <div class="button-light first">
+                                        <a href="#" onclick="saveMovie()">Save</a>
+                                    </div>
+                                    <div class="button-light">
+                                        <a href="#" onclick="showItems()">Cancel</a>
+                                    </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="select-movie-dialog">
+                <div id="select-movie-dialog-content">
+                    <input id="selected-function" type="hidden" value=""/>
+                    <h1 id="select-movie-message">Please select the movie</h1>
+                    <p>
+                        <select id="edMovie" onchange="getMovieDetails();">
+                            <option>-- Please select --</option>
+                        </select>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Copyright (c) 2014 Adamantios Zaras. All rights reserved. </p>
+        </div>
+    </body>
+</html>

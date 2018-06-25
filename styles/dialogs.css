@@ -1,0 +1,22 @@
+﻿#select-movie-dialog {
+    background: #F1F2E9;
+}
+
+#select-movie-dialog-content {
+    overflow: hidden;
+    width: 1120px;
+    margin: 0 auto;
+    padding: 50px 40px;
+    color: #717171;
+}
+
+#select-movie-dialog-content p {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#select-movie-dialog-content p select {
+    border: 1px solid #333333;
+    background-color: #F1F2E9;
+    color: #333333;
+}

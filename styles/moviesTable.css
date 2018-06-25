@@ -1,0 +1,62 @@
+﻿.moviesTable {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 1px solid #000000;
+}
+
+.moviesTable table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.moviesTable tr:nth-child(odd) {
+    background-color: #ebb462;
+}
+
+.moviesTable tr:nth-child(even) {
+    background-color: #f1f2e9;
+}
+
+.moviesTable td {
+    vertical-align: middle;
+    border: 1px solid #000000;
+    border-width: 0 1px 1px 0;
+    text-align: left;
+    padding: 3px;
+    font-size: 12px;
+    font-family: Verdana, serif;
+    font-weight: bold;
+    color: #3d2e20;
+}
+
+.moviesTable tr:last-child td {
+    border-width: 0 1px 0 0;
+}
+
+.moviesTable tr td:last-child {
+    border-width: 0 0 1px 0;
+}
+
+.moviesTable tr:last-child td:last-child {
+    border-width: 0 0 0 0;
+}
+
+.moviesTable tr:first-child td {
+    background-color: #36332e;
+    border: 0 solid #000000;
+    text-align: center;
+    border-width: 0 0 1px 1px;
+    font-size: 14px;
+    font-family: Verdana, serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.moviesTable tr:first-child:hover td {
+    background-color: #36332e;
+}
